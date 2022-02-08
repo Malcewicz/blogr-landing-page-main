@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --clr-red: hsl(356, 100%, 66%);
+    --clr-l-red: hsl(355, 100%, 74%);
+    --clr-d-blue: hsl(208, 49%, 24%);
+    --text-footer: hsl(240, 2%, 79%);
+    --clr-g-blue: hsl(207, 13%, 34%);
+    --clr-b-blue: hsl(240, 10%, 16%);
+    /* Gradients */
+    --clr-vl-red: hsl(13, 100%, 72%);
+    --clr-l-red-gr: hsl(353, 100%, 62%);
+    --clr-dg-blue: hsl(237, 17%, 21%);
+    --clr-dd-blue: hsl(237, 23%, 32%);
+    /* Fonts */
+    --fc-white: hsl(0, 0%, 100%);
+    --ff-overpass: 'Overpass', sans-serif;
+    --ff-ubuntu: 'Ubuntu', sans-serif;
+}
+
+/* ------
+    main
+   ------ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-overpass);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.start {
+    background-image: url('/images/bg-pattern-intro-desktop.svg');
+}
+
+.bg-st {
+    background: linear-gradient(
+        to right,
+        var(--clr-vl-red),
+        var(--clr-l-red-gr)
+    );
+}
+
+/* -------------
+    attribution
+   ------------- */
+.attribution { 
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    padding: 1em 0 1em 0;
+    font-size: 0.75rem; 
+    justify-content: center;
+    background-color: var(--clr-b-blue);
+    color: var(--fc-white);
+}
+.attribution a { 
+    color: var(--clr-red); 
+    text-decoration: none;
+}
+.attribution #r {
+    padding-left: 1em;
+}
+
+/* -------
+    media
+   ------- */
+@media (max-width: 800px) {
+    
+}
